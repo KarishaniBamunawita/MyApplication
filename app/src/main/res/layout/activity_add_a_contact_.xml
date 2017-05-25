@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.karshi.callerapp.Add_a_contact_Activity">
+
+    <TextView
+        android:id="@+id/lblname"
+        android:layout_width="89dp"
+        android:layout_height="37dp"
+        android:text="Name:"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtname"
+        android:layout_marginLeft="36dp" />
+
+    <EditText
+        android:id="@+id/txtname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="55dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="18dp" />
+
+    <TextView
+        android:id="@+id/lblPhone"
+        android:layout_width="85dp"
+        android:layout_height="0dp"
+        android:text="txtphone"
+        app:layout_constraintRight_toLeftOf="@+id/txtPhone"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPhone"
+        android:layout_marginEnd="32dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtPhone"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="32dp" />
+
+    <EditText
+        android:id="@+id/txtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/btnadd"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="184dp"
+        android:layout_marginBottom="181dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="16dp" />
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="108dp"
+        android:layout_height="63dp"
+        android:text="ADD"
+        android:onClick="AddDetails"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="103dp"
+        android:layout_marginRight="48dp" />
+</android.support.constraint.ConstraintLayout>

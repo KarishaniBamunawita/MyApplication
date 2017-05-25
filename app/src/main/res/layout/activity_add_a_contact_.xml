@@ -10,14 +10,15 @@
         android:id="@+id/lblname"
         android:layout_width="89dp"
         android:layout_height="37dp"
-        android:text="Name:"
-        tools:layout_constraintTop_creator="1"
+        android:layout_marginLeft="36dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="8dp"
-        tools:layout_constraintLeft_creator="1"
+        android:text="Name:"
+        android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="@+id/txtname"
-        android:layout_marginLeft="36dp" />
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
 
     <EditText
         android:id="@+id/txtname"
@@ -36,21 +37,21 @@
 
     <TextView
         android:id="@+id/lblPhone"
-        android:layout_width="85dp"
-        android:layout_height="0dp"
-        android:text="txtphone"
-        app:layout_constraintRight_toLeftOf="@+id/txtPhone"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="36dp"
-        app:layout_constraintBottom_toBottomOf="@+id/txtPhone"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
         android:layout_marginEnd="32dp"
-        tools:layout_constraintLeft_creator="1"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:text="txtphone"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPhone"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="@+id/txtPhone"
-        android:layout_marginLeft="36dp"
-        android:layout_marginRight="32dp" />
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/txtPhone"
